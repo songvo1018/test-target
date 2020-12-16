@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<title>Scrile target indicator</title>
+	</head>
+	<body>
+		<div class="main">
+			<div class="main-header"><span>Target Indicator Demo</span></div>
+			<div class="main-container">
+				<div class="main-content">
+					<div class="range">
+						<div class="range-text">Reached:</div>
+						<div class="range-wrapper">
+							<div class="range-control">
+								<input
+									step="1"
+									min="0"
+									max="15"
+									value="14"
+									id="rangeInput"
+									type="range"
+								/>
+							</div>
+							<div class="range-output" id="rangeOutput"></div>
+							<div class="range-result">
+								<div>Target</div>
+								<div class="divider"></div>
+								<div><span id="target">$15</span></div>
+							</div>
+						</div>
+					</div>
+					<div class="info">
+						<img src="info.png" alt="Information icon" />
+						<span id="info"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="script.js" type="text/javascript"></script>
+	</body>
+</html>
